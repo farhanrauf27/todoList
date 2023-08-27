@@ -43,8 +43,8 @@ function TodoForm(){
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Learn React</td>
-      <td>27/6/23</td>
+      {/* <td>Learn React</td>
+      <td>27/6/23</td> */}
     </tr>
     
   </tbody>
