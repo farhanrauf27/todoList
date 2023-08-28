@@ -1,10 +1,9 @@
-function TodoList(task,date,children){
+function Task({todo,date,id,deleteTask}){
     return(
         <>
         <div>
-        <table class="table table-light table-hover table-bordered ">
+        {/* <table class="table table-light table-hover table-bordered ">
   <thead>
-    {children}
     <tr>
       <th scope="col">#</th>
       <th scope="col">Task</th>
@@ -18,11 +17,16 @@ function TodoList(task,date,children){
       <td>{date}</td>
     </tr>
   </tbody>
-</table>
+</table> */}
+<h1>{id}. {todo} {date}
+
+<button className="mx-2 btn btn-info">Edit</button> <button className="mx-2 btn btn-danger" onClick={()=>deleteTask(id)}>Delete</button>
+</h1> 
+
        
         </div>
        
         </>
     )
 }
-export default TodoList;
+export default Task;
