@@ -1,7 +1,7 @@
 const data=[
     {
         todo:"Learn HP",
-        date:"23-5-23",
+        date:"2023-05-23",
         id: 1,
     },
     

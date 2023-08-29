@@ -1,31 +1,20 @@
-function Task({todo,date,id,deleteTask}){
+import './Task.css'
+import pic from './trash.svg'
+import pic2 from './edit.svg'
+function Task({todo,date,id,deleteTask,editTasks}){
+  
     return(
         <>
-        <div>
-        {/* <table class="table table-light table-hover table-bordered ">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Task</th>
-      <th scope="col">Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>{task}</td>
-      <td>{date}</td>
-    </tr>
-  </tbody>
-</table> */}
-<h1>{id}. {todo} {date}
-
-<button className="mx-2 btn btn-info">Edit</button> <button className="mx-2 btn btn-danger" onClick={()=>deleteTask(id)}>Delete</button>
-</h1> 
-
-       
-        </div>
-       
+<div className="container" style={{backgroundColor: '#ecedf6'}}>  
+<div className="d-flex " style={{justifyContent:'flex-start',backgroundColor:'white'}}>
+<p>{id}. {todo}  </p>
+<p>{date}</p>
+</div>
+<div className="d-flex my-2 " style={{justifyContent:'flex-end'}}>
+<button className="mx-2 btn" style={{backgroundColor:'#eee'}} onClick={()=>editTasks(id)}><img src={pic2}/></button> 
+<button className="mx-2 btn" style={{backgroundColor:'#eee'}} onClick={()=>deleteTask(id)}><img src={pic}></img></button>
+</div> </div>
+        
         </>
     )
 }
