@@ -29,24 +29,6 @@ function App() {
   return (
     <>
 
-{/* <div className="container"> */}
-        {/* <BrowserRouter>
-          <Routes>
-            { user && <Route path="/" element={<Task/>} /> }
-            {!user && (
-              <>
-              <Route path="/login" element={<Login/>} />
-              <Route path="/signup" element={<Register/>} />
-              </>
-            )}
-            <Route path="*" element={<Navigate to={user ? '/':'/login'} />} />
-          </Routes>
-        </BrowserRouter>
-    </div> */}
-   
-  
-
-
 
     <div className="container-fluid my-2"  >
       <h1 style={{textAlign:'center'}} >Add Task</h1>
