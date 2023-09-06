@@ -4,9 +4,38 @@ import './App.css';
 import AddTask from './components/AddTask';
 import TaskList from './components/TaskList';
 import initial from './data/data';
+import React from 'react';
+import Layout from './components/Layout';
+// import ReactDOM from 'react-dom/client';
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import AboutUs from './components/About';
 
 
 function App() {
+
+{/* <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<AddTask/>}>
+          <Route path="about" element={<AboutUs />} />
+  
+        </Route>
+      </Routes>
+    </BrowserRouter> */}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [editTask, setEditTask] = useState(null);
   const[tasks,setTasks]=useState(initial)
   function addTask(t) {
@@ -28,7 +57,7 @@ function App() {
   
   return (
     <>
-    <div className="yoxvvfrcgfg"></div>
+    <Layout/>
     <div className="container-fluid my-2"  >
       <h1 style={{textAlign:'center'}} >Add Task</h1>
     <AddTask editTask={editTask} updateTask={update} addTask={addTask}></AddTask>

@@ -7,7 +7,6 @@ const initailState={
 }
 function AddTask({addTask,editTask,updateTask}){   
     const[task,setTask]=useState(initailState) 
-   
 
     function handleClick(e){
         e.stopPropagation()
