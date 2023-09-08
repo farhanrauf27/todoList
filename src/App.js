@@ -59,6 +59,9 @@ function App() {
     <>
     <div>
     <Layout/></div>
+    <div>
+      Aur bata
+    </div>
     <div className="container-fluid my-2"  >
       <h1 style={{textAlign:'center'}} >Add Task</h1>
     <AddTask editTask={editTask} updateTask={update} addTask={addTask}></AddTask>
